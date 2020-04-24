@@ -77,7 +77,7 @@ class Game{
     init(){
         this.grabElements();
         this.incorrectAnswers.length = 0;
-        this.numbersArr = [1,2];
+        this.numbersArr = [1,2,3,4,5,6,7,8,9,10];
 
         this.correctAnswer = null;
         this.base = null;

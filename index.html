@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Saske's Math Program</title>
+</head>
+<body>
+
+    <main>
+        <div class="consecutive-board">
+            <span>Consecutive Wins:</span>
+            <span id="consecutiveView">1</span>
+        </div>
+
+        <div class="equation-wrapper">
+            <div class="equation-content">
+                <div class="upper">3</div>
+                <div class="lower">
+                    <div id="operator" class="operator">X</div>
+                    <div class="base-number">3</div>
+                </div>
+                <div class="border"></div>
+                <div class="answer-wrapper">
+                    <form id="subAnswer">
+                        <input type="number" class="answer" required>
+                        <button type="submit">GO!</button>
+                    </form>
+                </div>    
+            </div>
+        </div>
+
+        <div class="levels-wrapper">
+            <div class="level l10">10</div>
+            <div class="level l9">9</div>
+            <div class="level l8">8</div>
+            <div class="level l7">7</div>
+            <div class="level l6">6</div>
+            <div class="level l5">5</div>
+            <div class="level l4">4</div>
+            <div class="level l3">3</div>
+            <div class="level l2">2</div>
+            <div class="level l1">1</div>
+        </div>
+
+        <div class="" id="messenger">
+            <div class="close-wrapper">
+                <div id="close">X</div>
+            </div>
+            <p id="message"></p>
+        </div>
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

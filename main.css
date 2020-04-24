@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+main {
+    margin-top: 10%;
+    
+}
+
+/* Consecutive Board */
+.consecutive-board {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.3em;
+    color: lightseagreen;
+}
+
+span#consecutiveView {
+    font-weight: 800;
+}
+
+.equation-wrapper {
+    display: inline-block;
+}
+
+.levels-wrapper {
+    border: 1px solid #222;
+    max-width: 150px;
+    text-align: center;
+    margin-left: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.level {
+    border: 1px solid #eef;
+    color: #ccc;
+    font-family: arial;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.level-highlight {
+    background: lightseagreen;
+    color: #fff;
+    transition: background 2s;
+}
+
+/* Equation */
+
+.upper, .lower {
+    min-height: 30px;
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+}
+
+.border {
+    border-top: 1px solid #7b7070;
+    margin: 20px 0;
+}
+
+.answer-wrapper {
+    min-width: 100px;
+    text-align: center;
+}
+
+.operator, .base-number{
+    display: inline-block;
+}
+
+div#operator {
+    float: left;
+    font-size: 30px !important;
+}
+
+.base-number{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.answer {
+    max-width: 110px;
+    height: 40px;
+    border: 1px solid mediumspringgreen;
+    font-size: 1.5em;
+    text-align: center;
+    color: lightskyblue;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #eee;
+    color: #fff;
+    background: lightseagreen;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 0 5px;
+}
+
+
+/* Messenger */
+
+div#messenger {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    background: lightseagreen;
+    color: #fff;
+    font-size: 1.4em;
+    width: 500px;
+    height: 250px;
+}
+
+.close-wrapper {
+    text-align: right;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+p#message {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+}
